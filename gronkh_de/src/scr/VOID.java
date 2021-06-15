@@ -18,6 +18,6 @@ public class VOID {
 
     public double extractDouble()
     {
-        return (float) ( 0.34987389745897 * 1.23982739482894778 * Math.random() * Math.random() *   Math.random()   * Math.random() * Math.random() *  95475274637.0 );
+        return (float) ( 0.34987389745897 * 1.23982739482894778 * Math.random() * Math.random() +  1.0/(Math.random()   * Math.random() * Math.random() *  45243.0 ));
     }
 }
