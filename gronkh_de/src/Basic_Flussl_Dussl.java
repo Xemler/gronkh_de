@@ -236,7 +236,16 @@ public class Basic_Flussl_Dussl {
 
 
 
+
         draw_list.add(new SimpleRandomRect(0.0, 0.0, 1920, 980, 2.5));
+
+
+
+        Map<String, int[]>  path_string;
+
+
+        path_string = new HashMap<>();
+
 
 
         final int[] lxc_x = {-1};
@@ -258,6 +267,11 @@ public class Basic_Flussl_Dussl {
                 } else if( e.getKeyCode() == KeyEvent.VK_M ) {
                     mod =  (mod + 1) % mode_max;
 
+                }
+
+
+                if( e.getKeyCode() == KeyEvent.VK_0 ) {
+                    Rectangle new_img_size = openSizeDialog("New Screen Size Request");
                 }
             }
 
@@ -282,7 +296,7 @@ public class Basic_Flussl_Dussl {
                 ++click_count[0];
 
 
-                if( click_count[0] % 2 == 1 )
+                if( click_count[0] % 2 == 0 )
                 {
                     draw_list.add( new SimpleRandomRect(lxc_x[0], lxc_y[0], e.getX() - lxc_x[0], e.getY() - lxc_y[0], 3.1415 ));
                 }
@@ -474,7 +488,11 @@ public class Basic_Flussl_Dussl {
                if( rgb3 < 0 )
                    rgb3 = 91;
 
-               img.setRGB(x, y, new Color( rgb1, rgb2, rgb3 ).getRGB() );
+
+
+               Color c1 = Color.getHSBColor( rgb1/255.0f, rgb2/425.0f, rgb3/ 2322.0f );
+
+               img.setRGB(x, y, c1.getRGB());
 
 
 
@@ -599,7 +617,803 @@ public class Basic_Flussl_Dussl {
                    y = 0;
 
 
-               img.setRGB(x%img.getWidth(), y%img.getHeight(), new Color( rgb1, rgb2, rgb3 ).getRGB() );
+               Color c2 =  new Color( rgb1, rgb2, rgb3 );
+
+               img.setRGB(x%img.getWidth(), y%img.getHeight(), c2.getRed());
+
+
+               rgb2 = rgb052 & rgb12387 & rgb503 & rgb903 & rgb2 ;
+
+               rgb1 = rgb1 | rgb052 | rgb22 & rgb2 ;
+
+
+               rgb3 = rgb02 & rgb03 ;
+
+
+
+               rgb2 = rgb2 % 255;
+
+
+               if( rgb2 < 0 )
+               {
+                   rgb2 =  -rgb2 % 255;
+               }
+
+
+               rgb1 = rgb1 % 255;
+
+               if( rgb1 < 0 )
+                   rgb1 =  -rgb1 % 255;
+
+
+
+
+               rgb3 = rgb3 % 255;
+
+
+               if( rgb3 < 0 )
+                   rgb3 =  -rgb3 % 255;
+
+
+
+               if( x > 7 )  {
+                   x  +=    2*(int)(SimpleMath.random() * 2.0);
+               }if( y > 7 )  {
+                   y  +=    2*(int)(SimpleMath.random() * 2.0);
+               }
+
+
+               if( x < img.getWidth() - 7 )  {
+                   x  -=    2*(int)(SimpleMath.random() * 2.0);
+               }if( y < img.getHeight() - 7 )  {
+                   y  -=    2*(int)(SimpleMath.random() * 2.0);
+               }
+
+
+               if( x < 0 )
+                   x = 0;
+
+               if( y < 0 )
+                   y = 0;
+
+
+
+               Color c3 =  Color.getHSBColor( rgb1, rgb2, rgb3 );
+
+
+               img.setRGB(x%img.getWidth(), y%img.getHeight(), c3.getRGB() );
+
+
+
+
+               if ( Math.random() > 0.53443324323422 )
+               {
+
+
+
+
+                   int rgb7341 = rgb22 & rgb2443w | rgb12387 & rgb01 | rgb3 & rgb2443w ;
+                   int rgb7342 = rgb01 & rgb5243 & rgb5243 | rgb01 | rgb029 | rgb2443w ;
+                   int rgb7343 = rgb12387 | rgb12387 & rgb22 ;
+                   int rgb7344 = rgb03 | rgb5243 | rgb33 & rgb22 ;
+                   int rgb7345 = rgb903 | rgb03 & rgb22 & rgb03 | rgb01 | rgb029 ;
+                   int rgb7346 = rgb01 & rgb01 & rgb2 | rgb1 | rgb029 ;
+                   int rgb7347 = rgb33 & rgb01 & rgb3 | rgb5243 ;
+                   int rgb7348 = rgb1 | rgb503 & rgb03 ;
+                   int rgb7349 = rgb903 | rgb3 & rgb029 | rgb903 ;
+                   int rgb7350 = rgb503 & rgb2 & rgb5243 & rgb33 & rgb091 ;
+                   int rgb7351 = rgb22 | rgb2443w ;
+                   int rgb7352 = rgb1 & rgb503 ;
+                   int rgb7353 = rgb029 & rgb091 & rgb1 | rgb33 ;
+                   int rgb7354 = rgb1 | rgb12387 & rgb03 | rgb1 ;
+                   int rgb7355 = rgb052 | rgb2443w & rgb503 ;
+                   int rgb7356 = rgb2 | rgb503 ;
+                   int rgb7357 = rgb12387 & rgb12387 | rgb503 & rgb5243 & rgb3 & rgb029 ;
+                   int rgb7358 = rgb3 & rgb029 | rgb503 | rgb22 & rgb1 ;
+
+                   int rgb7360 = rgb33 & rgb33 & rgb33 | rgb503 | rgb2443w ;
+                   int rgb7361 = rgb12387 | rgb22 | rgb01 & rgb02 | rgb12387 | rgb3 ;
+                   int rgb7362 = rgb015 & rgb03 & rgb2443w ;
+                   int rgb7363 = rgb02 ;
+                   int rgb7364 = rgb503 & rgb33 ;
+                   int rgb7365 = rgb5243 | rgb12387 & rgb503 | rgb029 ;
+
+                   int rgb7367 = rgb33 | rgb029 ;
+                   int rgb7368 = rgb33 & rgb503 & rgb22 ;
+                   int rgb7369 = rgb03 & rgb03 | rgb503 ;
+                   int rgb7370 = rgb903 & rgb903 ;
+                   int rgb7371 = rgb503 & rgb33 & rgb22 ;
+                   int rgb7372 = rgb091 | rgb091 | rgb02 | rgb903 & rgb3 ;
+
+                   int rgb7374 = rgb052 ;
+                   int rgb7375 = rgb22 ;
+                   int rgb7376 = rgb903 & rgb02 ;
+                   int rgb7377 = rgb3 | rgb1 & rgb5243 ;
+                   int rgb7378 = rgb3 & rgb02 & rgb1 & rgb33 & rgb01 | rgb052 ;
+                   int rgb7379 = rgb01 & rgb5243 & rgb091 | rgb3 | rgb02 ;
+                   int rgb7380 = rgb503 & rgb3 | rgb02 & rgb2443w ;
+                   int rgb7381 = rgb503 & rgb029 & rgb22 ;
+                   int rgb7382 = rgb2 | rgb091 ;
+                   int rgb7383 = rgb2443w | rgb029 | rgb3 | rgb33 | rgb029 & rgb5243 ;
+                   int rgb7384 = rgb12387 | rgb091 | rgb903 | rgb029 | rgb029 | rgb2443w ;
+                   int rgb7385 = rgb029 | rgb12387 | rgb052 & rgb2 | rgb2443w ;
+
+                   int rgb7387 = rgb12387 & rgb33 | rgb33 & rgb029 | rgb2 ;
+                   int rgb7388 = rgb01 | rgb052 ;
+
+                   int rgb7390 = rgb015 & rgb22 ;
+                   int rgb7391 = rgb029 | rgb5243 | rgb903 | rgb091 | rgb01 | rgb903 ;
+
+                   int rgb7393 = rgb2443w | rgb3 | rgb01 | rgb2 | rgb5243 | rgb015 ;
+                   int rgb7394 = rgb5243 & rgb3 ;
+
+                   int rgb7396 = rgb1 & rgb5243 & rgb029 ;
+                   int rgb7397 = rgb12387 | rgb029 | rgb2443w & rgb01 | rgb22 ;
+                   int rgb7399 = rgb3 & rgb052 & rgb12387 | rgb503 ;
+
+                   int rgb7400 = rgb12387 ;
+                   int rgb7401 = rgb02 ;
+
+                   int rgb7403 = rgb12387 | rgb03 ;
+                   int rgb7404 = rgb1 | rgb2443w & rgb052 | rgb3 | rgb12387 ;
+                   int rgb7405 = rgb01 & rgb903 & rgb2443w | rgb12387 ;
+
+                   int rgb7408 = rgb052 & rgb503 | rgb01 | rgb5243 ;
+                   int rgb7409 = rgb5243 & rgb02 | rgb2 | rgb22 | rgb052 ;
+                   int rgb7410 = rgb33 | rgb2 & rgb01 | rgb1 ;
+                   int rgb7411 = rgb5243 | rgb2 ;
+                   int rgb7412 = rgb1 ;
+                   int rgb7413 = rgb22 & rgb903 | rgb3 & rgb5243 | rgb03 & rgb2 ;
+                   int rgb7414 = rgb03 | rgb02 ;
+                   int rgb7415 = rgb503 | rgb01 & rgb01 & rgb5243 | rgb2443w ;
+                   int rgb7416 = rgb903 | rgb03 | rgb12387 ;
+                   int rgb7418 = rgb2443w | rgb02 & rgb02 | rgb01 ;
+                   int rgb7419 = rgb12387 ;
+                   int rgb7420 = rgb503 & rgb1 | rgb015 | rgb029 & rgb015 ;
+                   int rgb7421 = rgb015 & rgb21416;
+                   int rgb7422 = rgb1 & rgb03 & rgb02 & rgb015 & rgb091 ;
+                   int rgb7423 = rgb091 | rgb01 | rgb12387 | rgb1 & rgb503 & rgb3 ;
+                   int rgb7424 = rgb015 ;
+
+                   int rgb7426 = rgb503 & rgb015 & rgb029 & rgb01 | rgb091 | rgb503 ;
+                   int rgb7427 = rgb2443w & rgb33 | rgb12387 ;
+                   int rgb7428 = rgb3 & rgb12387 & rgb052 & rgb1 ;
+                   int rgb7429 = rgb903 | rgb029 | rgb22 | rgb3 ;
+                   int rgb7430 = rgb12387 & rgb052 ;
+
+                   int rgb7432 = rgb029 | rgb02 | rgb3 | rgb03 | rgb2 ;
+                   int rgb7433 = rgb5243 & rgb015 & rgb33 & rgb03 ;
+                   int rgb7434 = rgb1 & rgb091 | rgb029 ;
+                   int rgb7435 = rgb015 | rgb02 | rgb1 ;
+                   int rgb7436 = rgb052 & rgb5243 & rgb091 | rgb3 & rgb091 ;
+                   int rgb7437 = rgb015 & rgb03 & rgb503 ;
+
+                   int rgb7439 = rgb2 & rgb12387 & rgb02 & rgb33 ;
+                   int rgb7440 = rgb01 & rgb12387 & rgb5243 & rgb029 | rgb33 & rgb903 ;
+                   int rgb7441 = rgb5243 | rgb1 & rgb33 | rgb503 & rgb3 | rgb03 ;
+                   int rgb7442 = rgb015 | rgb029 & rgb2443w & rgb029 | rgb01 | rgb1 ;
+                   int rgb7443 = rgb02 & rgb1 | rgb12387 | rgb2 & rgb2443w ;
+
+
+                   int rgb12364 = rgb33 | rgb01 & rgb33 & rgb1 | rgb091 | rgb029 ;
+                   int rgb12365 = rgb029 & rgb3 & rgb03 | rgb903 | rgb12387 | rgb091 ;
+                   int rgb12366 = rgb03 | rgb12387 & rgb33 | rgb12387 & rgb33 ;
+
+                   int rgb17317 = rgb091 & rgb03 | rgb029 & rgb01 ;
+                   int rgb17318 = rgb015 | rgb029 & rgb903 | rgb12387 | rgb33 ;
+
+
+
+                   int rgb17327 = rgb029 & rgb503 ;
+                   int rgb17328 = rgb22 | rgb091 | rgb12387 & rgb3 ;
+                   int rgb17329 = rgb015 | rgb12387 | rgb903 | rgb2 & rgb503 ;
+                   int rgb17330 = rgb5243 & rgb015 | rgb22 | rgb01 & rgb33 ;
+                   int rgb17331 = rgb903 | rgb015 & rgb03 & rgb02 ;
+
+
+
+                   rgb3 =   rgb3 |  ( rgb1 & rgb029 & rgb22 ) | rgb7345 | rgb7374;
+
+
+                   rgb3 = rgb23239 | rgb3;
+
+
+
+
+
+                   rgb2 = rgb2 % 255;
+
+
+                   if( rgb2 < 0 )
+                   {
+                       rgb2 = 255;
+                   }
+
+
+                   rgb1 = rgb1 % 255;
+
+                   if( rgb1 < 0 )
+                       rgb1 = 121;
+
+
+
+                   rgb3 = rgb3 % 255;
+
+
+                   if( rgb3 < 0 )
+                       rgb3 = 91;
+
+
+
+
+                   if( x < 0 )
+                       x = 0;
+
+                   if( y < 0 )
+                       y = 0;
+                   c1 = Color.getHSBColor( rgb1/255.0f, rgb2/425.0f, rgb3/ 2322.0f );
+
+                   img.setRGB(x%img.getWidth(), y%img.getHeight(), c1.getRGB());
+
+
+
+
+
+
+
+
+                   rgb1 = rgb2443w | rgb1 | rgb503 & rgb02 & rgb1 | rgb7401 ;
+
+                   rgb2 = rgb052 | rgb01 | rgb5243 & rgb2 ;
+
+                   rgb3 = rgb503 | rgb3 & rgb33 & rgb2443w | rgb029 & rgb2 & rgb7426 ;
+
+
+
+
+
+
+
+
+
+
+                   rgb2 = rgb2 % 255;
+
+
+                   if( rgb2 < 0 )
+                   {
+                       rgb2 =  -rgb2 % 255;
+                   }
+
+
+                   rgb1 = rgb1 % 255;
+
+                   if( rgb1 < 0 )
+                       rgb1 =  -rgb1 % 255;
+
+
+
+
+                   rgb3 = rgb3 % 255;
+
+
+                   if( rgb3 < 0 )
+                       rgb3 =  -rgb3 % 255;
+
+
+
+                   if( x > 7 )  {
+                       x  +=    2*(int)(SimpleMath.random() * 2.0);
+                   }if( y > 7 )  {
+                   y  +=    2*(int)(SimpleMath.random() * 2.0);
+                    }
+
+
+                   if( x < img.getWidth() - 7 )  {
+                       x  -=    2*(int)(SimpleMath.random() * 2.0);
+                   }if( y < img.getHeight() - 7 )  {
+                   y  -=    2*(int)(SimpleMath.random() * 2.0);
+                     }
+
+
+                   if( x < 0 )
+                       x = 0;
+
+                   if( y < 0 )
+                       y = 0;
+
+
+                   img.setRGB(x%img.getWidth(), y%img.getHeight(), new Color( rgb1, rgb2, rgb3 ).getRGB() );
+
+
+
+                   rgb3 = (rgb5243 & rgb03 | rgb22 | rgb03 & rgb015 | rgb12387) & rgb7344 ;
+
+
+                   rgb2 = rgb12387 | rgb3 | rgb503 & rgb029 | rgb029 | rgb503 ;
+
+                   rgb1 = rgb03 | rgb01 | rgb02 & rgb12387 & rgb2443w & rgb3 ;
+
+
+
+
+                   rgb2 = rgb2 % 255;
+
+
+                   if( rgb2 < 0 )
+                   {
+                       rgb2 =  -rgb2 % 255;
+                   }
+
+
+                   rgb1 = rgb1 % 255;
+
+                   if( rgb1 < 0 )
+                       rgb1 =  -rgb1 % 255;
+
+
+
+
+                   rgb3 = rgb3 % 255;
+
+
+                   if( rgb3 < 0 )
+                       rgb3 =  -rgb3 % 255;
+
+
+
+                   if( x > 7 )  {
+                       x  +=    2*(int)(SimpleMath.random() * 2.0);
+                   }if( y > 7 )  {
+                   y  +=    2*(int)(SimpleMath.random() * 2.0);
+                    }
+
+
+                   if( x < img.getWidth() - 7 )  {
+                       x  -=    2*(int)(SimpleMath.random() * 2.0);
+                   }if( y < img.getHeight() - 7 )  {
+                   y  -=    2*(int)(SimpleMath.random() * 2.0);
+                    }
+
+
+                   if( x < 0 )
+                       x = 0;
+
+                   if( y < 0 )
+                       y = 0;
+
+
+                   c2 =  Color.getHSBColor( rgb1, rgb2, rgb3 );
+
+                   img.setRGB(x%img.getWidth(), y%img.getHeight(), c2.getRed());
+
+
+                   rgb2 = rgb052 & rgb12387 & rgb503 & rgb903 & rgb2 ;
+
+                   rgb1 = rgb1 | rgb052 | rgb22 & rgb2 ;
+
+
+                   rgb3 = rgb02 & rgb03 ;
+
+
+
+                   rgb2 = rgb2 % 255;
+
+
+                   if( rgb2 < 0 )
+                   {
+                       rgb2 =  -rgb2 % 255;
+                   }
+
+
+                   rgb1 = rgb1 % 255;
+
+                   if( rgb1 < 0 )
+                       rgb1 =  -rgb1 % 255;
+
+
+
+
+                   rgb3 = rgb3 % 255;
+
+
+                   if( rgb3 < 0 )
+                       rgb3 =  -rgb3 % 255;
+
+
+
+                   if( x > 7 )  {
+                       x  +=    2*(int)(SimpleMath.random() * 2.0);
+                   }if( y > 7 )  {
+                   y  +=    2*(int)(SimpleMath.random() * 2.0);
+                    }
+
+
+                   if( x < img.getWidth() - 7 )  {
+                       x  -=    2*(int)(SimpleMath.random() * 2.0);
+                   }if( y < img.getHeight() - 7 )  {
+                   y  -=    2*(int)(SimpleMath.random() * 2.0);
+                    }
+
+
+                   if( x < 0 )
+                       x = 0;
+
+                   if( y < 0 )
+                       y = 0;
+
+
+
+                    c3 =  Color.getHSBColor( rgb1, rgb2, rgb3 );
+
+
+                   img.setRGB(x%img.getWidth(), y%img.getHeight(), c3.getRGB() );
+
+               }
+
+
+
+
+               if( SimpleMath.random() > 0.74738477487 ) {
+                   int rgb7341 = rgb22 & rgb2443w | rgb12387 & rgb01 | rgb3 & rgb2443w ;
+                   int rgb7342 = rgb01 & rgb5243 & rgb5243 | rgb01 | rgb029 | rgb2443w ;
+                   int rgb7343 = rgb12387 | rgb12387 & rgb22 ;
+                   int rgb7344 = rgb03 | rgb5243 | rgb33 & rgb22 ;
+                   int rgb7345 = rgb903 | rgb03 & rgb22 & rgb03 | rgb01 | rgb029 ;
+                   int rgb7346 = rgb01 & rgb01 & rgb2 | rgb1 | rgb029 ;
+                   int rgb7347 = rgb33 & rgb01 & rgb3 | rgb5243 ;
+                   int rgb7348 = rgb1 | rgb503 & rgb03 ;
+                   int rgb7349 = rgb903 | rgb3 & rgb029 | rgb903 ;
+                   int rgb7350 = rgb503 & rgb2 & rgb5243 & rgb33 & rgb091 ;
+                   int rgb7351 = rgb22 | rgb2443w ;
+                   int rgb7352 = rgb1 & rgb503 ;
+                   int rgb7353 = rgb029 & rgb091 & rgb1 | rgb33 ;
+                   int rgb7354 = rgb1 | rgb12387 & rgb03 | rgb1 ;
+                   int rgb7355 = rgb052 | rgb2443w & rgb503 ;
+                   int rgb7356 = rgb2 | rgb503 ;
+                   int rgb7357 = rgb12387 & rgb12387 | rgb503 & rgb5243 & rgb3 & rgb029 ;
+                   int rgb7358 = rgb3 & rgb029 | rgb503 | rgb22 & rgb1 ;
+
+                   int rgb7360 = rgb33 & rgb33 & rgb33 | rgb503 | rgb2443w ;
+                   int rgb7361 = rgb12387 | rgb22 | rgb01 & rgb02 | rgb12387 | rgb3 ;
+                   int rgb7362 = rgb015 & rgb03 & rgb2443w ;
+                   int rgb7363 = rgb02 ;
+                   int rgb7364 = rgb503 & rgb33 ;
+                   int rgb7365 = rgb5243 | rgb12387 & rgb503 | rgb029 ;
+
+                   int rgb7367 = rgb33 | rgb029 ;
+                   int rgb7368 = rgb33 & rgb503 & rgb22 ;
+                   int rgb7369 = rgb03 & rgb03 | rgb503 ;
+                   int rgb7370 = rgb903 & rgb903 ;
+                   int rgb7371 = rgb503 & rgb33 & rgb22 ;
+                   int rgb7372 = rgb091 | rgb091 | rgb02 | rgb903 & rgb3 ;
+
+                   int rgb7374 = rgb052 ;
+                   int rgb7375 = rgb22 ;
+                   int rgb7376 = rgb903 & rgb02 ;
+                   int rgb7377 = rgb3 | rgb1 & rgb5243 ;
+                   int rgb7378 = rgb3 & rgb02 & rgb1 & rgb33 & rgb01 | rgb052 ;
+                   int rgb7379 = rgb01 & rgb5243 & rgb091 | rgb3 | rgb02 ;
+                   int rgb7380 = rgb503 & rgb3 | rgb02 & rgb2443w ;
+                   int rgb7381 = rgb503 & rgb029 & rgb22 ;
+                   int rgb7382 = rgb2 | rgb091 ;
+                   int rgb7383 = rgb2443w | rgb029 | rgb3 | rgb33 | rgb029 & rgb5243 ;
+                   int rgb7384 = rgb12387 | rgb091 | rgb903 | rgb029 | rgb029 | rgb2443w ;
+                   int rgb7385 = rgb029 | rgb12387 | rgb052 & rgb2 | rgb2443w ;
+
+                   int rgb7387 = rgb12387 & rgb33 | rgb33 & rgb029 | rgb2 ;
+                   int rgb7388 = rgb01 | rgb052 ;
+
+                   int rgb7390 = rgb015 & rgb22 ;
+                   int rgb7391 = rgb029 | rgb5243 | rgb903 | rgb091 | rgb01 | rgb903 ;
+
+                   int rgb7393 = rgb2443w | rgb3 | rgb01 | rgb2 | rgb5243 | rgb015 ;
+                   int rgb7394 = rgb5243 & rgb3 ;
+
+                   int rgb7396 = rgb1 & rgb5243 & rgb029 ;
+                   int rgb7397 = rgb12387 | rgb029 | rgb2443w & rgb01 | rgb22 ;
+                   int rgb7399 = rgb3 & rgb052 & rgb12387 | rgb503 ;
+
+                   int rgb7400 = rgb12387 ;
+                   int rgb7401 = rgb02 ;
+
+                   int rgb7403 = rgb12387 | rgb03 ;
+                   int rgb7404 = rgb1 | rgb2443w & rgb052 | rgb3 | rgb12387 ;
+                   int rgb7405 = rgb01 & rgb903 & rgb2443w | rgb12387 ;
+
+                   int rgb7408 = rgb052 & rgb503 | rgb01 | rgb5243 ;
+                   int rgb7409 = rgb5243 & rgb02 | rgb2 | rgb22 | rgb052 ;
+                   int rgb7410 = rgb33 | rgb2 & rgb01 | rgb1 ;
+                   int rgb7411 = rgb5243 | rgb2 ;
+                   int rgb7412 = rgb1 ;
+                   int rgb7413 = rgb22 & rgb903 | rgb3 & rgb5243 | rgb03 & rgb2 ;
+                   int rgb7414 = rgb03 | rgb02 ;
+                   int rgb7415 = rgb503 | rgb01 & rgb01 & rgb5243 | rgb2443w ;
+                   int rgb7416 = rgb903 | rgb03 | rgb12387 ;
+                   int rgb7418 = rgb2443w | rgb02 & rgb02 | rgb01 ;
+                   int rgb7419 = rgb12387 ;
+                   int rgb7420 = rgb503 & rgb1 | rgb015 | rgb029 & rgb015 ;
+                   int rgb7421 = rgb015 & rgb21416;
+                   int rgb7422 = rgb1 & rgb03 & rgb02 & rgb015 & rgb091 ;
+                   int rgb7423 = rgb091 | rgb01 | rgb12387 | rgb1 & rgb503 & rgb3 ;
+                   int rgb7424 = rgb015 ;
+
+                   int rgb7426 = rgb503 & rgb015 & rgb029 & rgb01 | rgb091 | rgb503 ;
+                   int rgb7427 = rgb2443w & rgb33 | rgb12387 ;
+                   int rgb7428 = rgb3 & rgb12387 & rgb052 & rgb1 ;
+                   int rgb7429 = rgb903 | rgb029 | rgb22 | rgb3 ;
+                   int rgb7430 = rgb12387 & rgb052 ;
+
+                   int rgb7432 = rgb029 | rgb02 | rgb3 | rgb03 | rgb2 ;
+                   int rgb7433 = rgb5243 & rgb015 & rgb33 & rgb03 ;
+                   int rgb7434 = rgb1 & rgb091 | rgb029 ;
+                   int rgb7435 = rgb015 | rgb02 | rgb1 ;
+                   int rgb7436 = rgb052 & rgb5243 & rgb091 | rgb3 & rgb091 ;
+                   int rgb7437 = rgb015 & rgb03 & rgb503 ;
+
+                   int rgb7439 = rgb2 & rgb12387 & rgb02 & rgb33 ;
+                   int rgb7440 = rgb01 & rgb12387 & rgb5243 & rgb029 | rgb33 & rgb903 ;
+                   int rgb7441 = rgb5243 | rgb1 & rgb33 | rgb503 & rgb3 | rgb03 ;
+                   int rgb7442 = rgb015 | rgb029 & rgb2443w & rgb029 | rgb01 | rgb1 ;
+                   int rgb7443 = rgb02 & rgb1 | rgb12387 | rgb2 & rgb2443w ;
+
+
+                   int rgb12364 = rgb33 | rgb01 & rgb33 & rgb1 | rgb091 | rgb029 ;
+                   int rgb12365 = rgb029 & rgb3 & rgb03 | rgb903 | rgb12387 | rgb091 ;
+                   int rgb12366 = rgb03 | rgb12387 & rgb33 | rgb12387 & rgb33 ;
+
+                   int rgb17317 = rgb091 & rgb03 | rgb029 & rgb01 ;
+                   int rgb17318 = rgb015 | rgb029 & rgb903 | rgb12387 | rgb33 ;
+
+
+
+                   int rgb17327 = rgb029 & rgb503 ;
+                   int rgb17328 = rgb22 | rgb091 | rgb12387 & rgb3 ;
+                   int rgb17329 = rgb015 | rgb12387 | rgb903 | rgb2 & rgb503 ;
+                   int rgb17330 = rgb5243 & rgb015 | rgb22 | rgb01 & rgb33 ;
+                   int rgb17331 = rgb903 | rgb015 & rgb03 & rgb02 ;
+
+
+
+                   rgb3 =   rgb3 |  ( rgb1 & rgb029 & rgb22 ) | rgb7345 | rgb7374;
+
+
+                   rgb3 = rgb23239 | rgb3;
+
+
+
+
+
+                   rgb2 = rgb2 % 255;
+
+
+                   if( rgb2 < 0 )
+                   {
+                       rgb2 = 255;
+                   }
+
+
+                   rgb1 = rgb1 % 255;
+
+                   if( rgb1 < 0 )
+                       rgb1 = 121;
+
+
+
+                   rgb3 = rgb3 % 255;
+
+
+                   if( rgb3 < 0 )
+                       rgb3 = 91;
+
+
+
+
+                   if( x < 0 )
+                       x = 0;
+
+                   if( y < 0 )
+                       y = 0;
+                   c1 = Color.getHSBColor( rgb1/255.0f, rgb2/425.0f, rgb3/ 2322.0f );
+
+                   img.setRGB(x%img.getWidth(), y%img.getHeight(), c1.getRGB());
+
+
+
+
+
+
+
+
+                   rgb1 = rgb2443w | rgb1 | rgb503 & rgb02 & rgb1 | rgb7401 ;
+
+                   rgb2 = rgb052 | rgb01 | rgb5243 & rgb2 ;
+
+                   rgb3 = rgb503 | rgb3 & rgb33 & rgb2443w | rgb029 & rgb2 & rgb7426 ;
+
+
+
+
+
+
+
+
+
+
+                   rgb2 = rgb2 % 255;
+
+
+                   if( rgb2 < 0 )
+                   {
+                       rgb2 =  -rgb2 % 255;
+                   }
+
+
+                   rgb1 = rgb1 % 255;
+
+                   if( rgb1 < 0 )
+                       rgb1 =  -rgb1 % 255;
+
+
+
+
+                   rgb3 = rgb3 % 255;
+
+
+                   if( rgb3 < 0 )
+                       rgb3 =  -rgb3 % 255;
+
+
+
+                   if( x > 7 )  {
+                       x  +=    2*(int)(SimpleMath.random() * 2.0);
+                   }if( y > 7 )  {
+                       y  +=    2*(int)(SimpleMath.random() * 2.0);
+                   }
+
+
+                   if( x < img.getWidth() - 7 )  {
+                       x  -=    2*(int)(SimpleMath.random() * 2.0);
+                   }if( y < img.getHeight() - 7 )  {
+                       y  -=    2*(int)(SimpleMath.random() * 2.0);
+                   }
+
+
+                   if( x < 0 )
+                       x = 0;
+
+                   if( y < 0 )
+                       y = 0;
+
+
+                   img.setRGB(x%img.getWidth(), y%img.getHeight(), new Color( rgb1, rgb2, rgb3 ).getRGB() );
+
+
+
+                   rgb3 = (rgb5243 & rgb03 | rgb22 | rgb03 & rgb015 | rgb12387) & rgb7344 ;
+
+
+                   rgb2 = rgb12387 | rgb3 | rgb503 & rgb029 | rgb029 | rgb503 ;
+
+                   rgb1 = rgb03 | rgb01 | rgb02 & rgb12387 & rgb2443w & rgb3 ;
+
+
+
+
+                   rgb2 = rgb2 % 255;
+
+
+                   if( rgb2 < 0 )
+                   {
+                       rgb2 =  -rgb2 % 255;
+                   }
+
+
+                   rgb1 = rgb1 % 255;
+
+                   if( rgb1 < 0 )
+                       rgb1 =  -rgb1 % 255;
+
+
+
+
+                   rgb3 = rgb3 % 255;
+
+
+                   if( rgb3 < 0 )
+                       rgb3 =  -rgb3 % 255;
+
+
+
+                   if( x > 7 )  {
+                       x  +=    2*(int)(SimpleMath.random() * 2.0);
+                   }if( y > 7 )  {
+                       y  +=    2*(int)(SimpleMath.random() * 2.0);
+                   }
+
+
+                   if( x < img.getWidth() - 7 )  {
+                       x  -=    2*(int)(SimpleMath.random() * 2.0);
+                   }if( y < img.getHeight() - 7 )  {
+                       y  -=    2*(int)(SimpleMath.random() * 2.0);
+                   }
+
+
+                   if( x < 0 )
+                       x = 0;
+
+                   if( y < 0 )
+                       y = 0;
+
+
+                   c2 =  Color.getHSBColor( rgb1, rgb2, rgb3 );
+
+                   img.setRGB(x%img.getWidth(), y%img.getHeight(), c2.getRed());
+
+
+                   rgb2 = rgb052 & rgb12387 & rgb503 & rgb903 & rgb2 ;
+
+                   rgb1 = rgb1 | rgb052 | rgb22 & rgb2 ;
+
+
+                   rgb3 = rgb02 & rgb03 ;
+
+
+
+                   rgb2 = rgb2 % 255;
+
+
+                   if( rgb2 < 0 )
+                   {
+                       rgb2 =  -rgb2 % 255;
+                   }
+
+
+                   rgb1 = rgb1 % 255;
+
+                   if( rgb1 < 0 )
+                       rgb1 =  -rgb1 % 255;
+
+
+
+
+                   rgb3 = rgb3 % 255;
+
+
+                   if( rgb3 < 0 )
+                       rgb3 =  -rgb3 % 255;
+
+
+
+                   if( x > 7 )  {
+                       x  +=    2*(int)(SimpleMath.random() * 2.0);
+                   }if( y > 7 )  {
+                       y  +=    2*(int)(SimpleMath.random() * 2.0);
+                   }
+
+
+                   if( x < img.getWidth() - 7 )  {
+                       x  -=    2*(int)(SimpleMath.random() * 2.0);
+                   }if( y < img.getHeight() - 7 )  {
+                       y  -=    2*(int)(SimpleMath.random() * 2.0);
+                   }
+
+
+                   if( x < 0 )
+                       x = 0;
+
+                   if( y < 0 )
+                       y = 0;
+
+
+
+                   c3 =  Color.getHSBColor( rgb1, rgb2, rgb3 );
+
+
+                   img.setRGB(x%img.getWidth(), y%img.getHeight(), c3.getRGB() );
+
+               }
+
 
 
                for (int k = 0; k < draw_list.size(); k++) {
@@ -610,6 +1424,147 @@ public class Basic_Flussl_Dussl {
 
 
                    //img.setRGB(pos[0] % img.getWidth(), pos[1] % img.getHeight(), kX.nextColor().getRGB());
+
+
+                   Graphics g = img.getGraphics();
+                   ((Graphics2D)g).setComposite( AlphaComposite.getInstance(AlphaComposite.SRC_OUT, 0.0012442223f));
+
+
+                   int rgb7374 = rgb052 ;
+                   int rgb7375 = rgb22 ;
+                   int rgb7376 = rgb903 & rgb02 ;
+                   int rgb7377 = rgb3 | rgb1 & rgb5243 ;
+                   int rgb7378 = rgb3 & rgb02 & rgb1 & rgb33 & rgb01 | rgb052 ;
+                   int rgb7379 = rgb01 & rgb5243 & rgb091 | rgb3 | rgb02 ;
+                   int rgb7380 = rgb503 & rgb3 | rgb02 & rgb2443w ;
+                   int rgb7381 = rgb503 & rgb029 & rgb22 ;
+                   int rgb7382 = rgb2 | rgb091 ;
+                   int rgb7383 = rgb2443w | rgb029 | rgb3 | rgb33 | rgb029 & rgb5243 ;
+                   int rgb7384 = rgb12387 | rgb091 | rgb903 | rgb029 | rgb029 | rgb2443w ;
+                   int rgb7385 = rgb029 | rgb12387 | rgb052 & rgb2 | rgb2443w ;
+
+                   int rgb7387 = rgb12387 & rgb33 | rgb33 & rgb029 | rgb2 ;
+                   int rgb7388 = rgb01 | rgb052 ;
+
+                   int rgb7390 = rgb015 & rgb22 ;
+                   int rgb7391 = rgb029 | rgb5243 | rgb903 | rgb091 | rgb01 | rgb903 ;
+
+                   int rgb7393 = rgb2443w | rgb3 | rgb01 | rgb2 | rgb5243 | rgb015 ;
+                   int rgb7394 = rgb5243 & rgb3 ;
+
+                   int rgb7396 = rgb1 & rgb5243 & rgb029 ;
+                   int rgb7397 = rgb12387 | rgb029 | rgb2443w & rgb01 | rgb22 ;
+                   int rgb7399 = rgb3 & rgb052 & rgb12387 | rgb503 ;
+
+                   int rgb7400 = rgb12387 ;
+                   int rgb7401 = rgb02 ;
+
+                   int rgb7403 = rgb12387 | rgb03 ;
+                   int rgb7404 = rgb1 | rgb2443w & rgb052 | rgb3 | rgb12387 ;
+                   int rgb7405 = rgb01 & rgb903 & rgb2443w | rgb12387 ;
+
+                   int rgb7408 = rgb052 & rgb503 | rgb01 | rgb5243 ;
+                   int rgb7409 = rgb5243 & rgb02 | rgb2 | rgb22 | rgb052 ;
+                   int rgb7410 = rgb33 | rgb2 & rgb01 | rgb1 ;
+                   int rgb7411 = rgb5243 | rgb2 ;
+                   int rgb7412 = rgb1 ;
+                   int rgb7413 = rgb22 & rgb903 | rgb3 & rgb5243 | rgb03 & rgb2 ;
+                   int rgb7414 = rgb03 | rgb02 ;
+                   int rgb7415 = rgb503 | rgb01 & rgb01 & rgb5243 | rgb2443w ;
+                   int rgb7416 = rgb903 | rgb03 | rgb12387 ;
+                   int rgb7418 = rgb2443w | rgb02 & rgb02 | rgb01 ;
+                   int rgb7419 = rgb12387 ;
+                   int rgb7420 = rgb503 & rgb1 | rgb015 | rgb029 & rgb015 ;
+                   int rgb7421 = rgb015 & rgb21416;
+                   int rgb7422 = rgb1 & rgb03 & rgb02 & rgb015 & rgb091 ;
+                   int rgb7423 = rgb091 | rgb01 | rgb12387 | rgb1 & rgb503 & rgb3 ;
+                   int rgb7424 = rgb015 ;
+
+                   int rgb7426 = rgb503 & rgb015 & rgb029 & rgb01 | rgb091 | rgb503 ;
+                   int rgb7427 = rgb2443w & rgb33 | rgb12387 ;
+                   int rgb7428 = rgb3 & rgb12387 & rgb052 & rgb1 ;
+                   int rgb7429 = rgb903 | rgb029 | rgb22 | rgb3 ;
+                   int rgb7430 = rgb12387 & rgb052 ;
+
+                   int rgb7432 = rgb029 | rgb02 | rgb3 | rgb03 | rgb2 ;
+                   int rgb7433 = rgb5243 & rgb015 & rgb33 & rgb03 ;
+                   int rgb7434 = rgb1 & rgb091 | rgb029 ;
+                   int rgb7435 = rgb015 | rgb02 | rgb1 ;
+                   int rgb7436 = rgb052 & rgb5243 & rgb091 | rgb3 & rgb091 ;
+                   int rgb7437 = rgb015 & rgb03 & rgb503 ;
+
+                   int rgb7439 = rgb2 & rgb12387 & rgb02 & rgb33 ;
+                   int rgb7440 = rgb01 & rgb12387 & rgb5243 & rgb029 | rgb33 & rgb903 ;
+                   int rgb7441 = rgb5243 | rgb1 & rgb33 | rgb503 & rgb3 | rgb03 ;
+                   int rgb7442 = rgb015 | rgb029 & rgb2443w & rgb029 | rgb01 | rgb1 ;
+                   int rgb7443 = rgb02 & rgb1 | rgb12387 | rgb2 & rgb2443w ;
+
+
+                   int rgb12364 = rgb33 | rgb01 & rgb33 & rgb1 | rgb091 | rgb029 ;
+                   int rgb12365 = rgb029 & rgb3 & rgb03 | rgb903 | rgb12387 | rgb091 ;
+                   int rgb12366 = rgb03 | rgb12387 & rgb33 | rgb12387 & rgb33 ;
+
+                   int rgb17317 = rgb091 & rgb03 | rgb029 & rgb01 ;
+                   int rgb17318 = rgb015 | rgb029 & rgb903 | rgb12387 | rgb33 ;
+
+
+
+                   int rgb17327 = rgb029 & rgb503 ;
+                   int rgb17328 = rgb22 | rgb091 | rgb12387 & rgb3 ;
+                   int rgb17329 = rgb015 | rgb12387 | rgb903 | rgb2 & rgb503 ;
+                   int rgb17330 = rgb5243 & rgb015 | rgb22 | rgb01 & rgb33 ;
+                   int rgb17331 = rgb903 | rgb015 & rgb03 & rgb02 ;
+
+
+
+                   rgb3 =   rgb3 |  ( rgb1 & rgb029 & rgb22 )  | rgb7374;
+
+
+                   rgb3 = rgb23239 | rgb3;
+
+
+
+
+
+                   rgb2 = rgb2 % 255;
+
+
+                   if( rgb2 < 0 )
+                   {
+                       rgb2 = 255;
+                   }
+
+
+                   rgb1 = rgb1 % 255;
+
+                   if( rgb1 < 0 )
+                       rgb1 = 121;
+
+
+
+                   rgb3 = rgb3 % 255;
+
+
+                   if( rgb3 < 0 )
+                       rgb3 = 91;
+
+
+                   if( pos[0] < 0 )
+                       pos[0] = 0;
+
+                   if( pos[1] < 0 )
+                       pos[1] = 0;
+
+
+                   g.setColor(Color.getHSBColor( rgb3/2.0f, rgb1/255.0f, 0.55f ));
+
+
+
+                   g.fillRect(pos[0], pos[1], 2, 2);
+
+
+                   g.dispose();
+
                }
 
 
@@ -690,6 +1645,28 @@ public class Basic_Flussl_Dussl {
             //System.out.println( "############################");
                     BUTTON.setIcon(new ImageIcon(img));
         }
+    }
+
+    private static Rectangle openSizeDialog(String new_screen_size_request) {
+
+
+        Rectangle nsc = new Rectangle();
+
+
+        JOptionPane opt_pane = new JOptionPane("new_screen_size_request!", JOptionPane.QUESTION_MESSAGE);
+
+
+
+        String size=  JOptionPane.showInputDialog(opt_pane,  new_screen_size_request + " as width/height");
+
+
+        //TODO
+
+
+
+
+
+        return nsc;
     }
 
 

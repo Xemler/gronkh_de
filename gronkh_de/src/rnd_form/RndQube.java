@@ -113,7 +113,7 @@ public abstract class RndQube
 
 
 
-    public abstract Color nextColor( );
+    public abstract Color[] nextColors( );
 
 
 

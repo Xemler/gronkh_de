@@ -12,7 +12,7 @@ public class SimpleRandomRect extends RndQube {
     }
 
     @Override
-    public Color nextColor() {
+    public Color[] nextColors() {
         int rgb1 = (int) ( 255.0 * SimpleMath.random()* SimpleMath.random()  );
         int rgb2 = (int) ( 255.0 * SimpleMath.random()* SimpleMath.random()  );
         int rgb3 = (int) ( 255.0 * SimpleMath.random()* (SimpleMath.random())  );
@@ -143,6 +143,6 @@ public class SimpleRandomRect extends RndQube {
 
 
 
-        return new Color( rgb1, rgb2, rgb3 );
+        return new Color[]{ new Color( rgb1, rgb2, rgb3 ) };
     }
 }
